@@ -26,7 +26,8 @@ def handle_servers(worksheet):
         attribs = dict(
             classification=row.classification.value,
             category=row.category.value,
-            subCategory=row.subCategory.value
+            subCategory=row.subCategory.value,
+            lifeCycleState=row.lifeCycleState.value
         )
         server[row.serverId.value] = attribs
         loop.info_loop()

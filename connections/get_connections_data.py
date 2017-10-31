@@ -20,7 +20,8 @@ def get_device_attribs(server):
         return dict(
             category=sd[server]["category"],
             subCategory=sd[server]["subCategory"],
-            classification=sd[server]["classification"]
+            classification=sd[server]["classification"],
+            lifeCycleState= sd[server]["lifeCycleState"]
         )
     except KeyError:
         return dict()
